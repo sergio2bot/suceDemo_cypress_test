@@ -4,7 +4,7 @@
   "description": "Allwyn example test framework",
   "main": "index.js",
   "scripts": {
-    "testStandard": "node_modules/.bin/cypress run --env ENV='teststandard',TAGS='not @locked' --browser chrome",
+    "testStandard": "node_modules/.bin/cypress run --env ENV='teststandard',TAGS='not @lockedTest' --browser chrome",
     "testlocked": "node_modules/.bin/cypress run --env ENV='testlocked' --browser chrome",
     "open": "node_modules/.bin/cypress open --env ENV='teststandard',TAGS='not @lockedTest'",
     "tesHeaded": "npm run testStandard -- --headed",

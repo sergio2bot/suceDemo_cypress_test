@@ -57,7 +57,7 @@ const generateCucumberHtmlReport = (reportDir, browser, env) => {
     displayDuration: true,
     openReportInBrowser: true,
     useCDN: true,
-    pageTitle: "Allwyn Test task execution",
+    pageTitle: "Test task execution",
     reportName: `SauceDemo Test - Report - ${new Date().toLocaleString()}`,
     metadata: getReportMetada(browser),
     customData: getReportCustomData(env)

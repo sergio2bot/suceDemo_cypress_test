@@ -2,10 +2,9 @@ const path = require('path');
 
 const {CYPRESS_DIR} = require('./common/derDefinitions');
 const {generateCucumberReport} = require('./htmlReporter/generateCucumberHtmlReport');
-const DEFAULT_ENV='local';
+const DEFAULT_ENV='test';
 const DEFAULT_BROWSER='chrome';
-const DEFAULT_REPORT_DIR = path.resolve(process.cwd(), CYPRESS_DIR, 'allwyn-report');
-
+const DEFAULT_REPORT_DIR = path.resolve(process.cwd(), CYPRESS_DIR, 'suacedemo-report');
 const { argv } = require('yargs').option('env', {
   default: DEFAULT_ENV,
   description: 'The environment used when the test suite run'
