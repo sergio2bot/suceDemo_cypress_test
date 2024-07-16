@@ -1,0 +1,7 @@
+{
+    "userNameFld":"[data-test='username']",
+    "passFld":"[data-test='password']",
+    "logInBtn":"[data-test='login-button']",
+    "burgerBtn":"button#react-burger-menu-btn",
+    "errorMsg":"[data-test='error']"
+}

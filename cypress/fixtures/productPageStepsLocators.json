@@ -1,0 +1,11 @@
+{
+    "inventoryItem":"[data-test='inventory-item']",
+    "invetoryImage":"div.inventory_item_img img",
+    "inventoryName":"[data-test='inventory-item-name']",
+    "inventoryDesc":"[data-test='inventory-item-desc']",
+    "inventoryPrice":"[data-test='inventory-item-price']",
+    "filterSelector":"[data-test='product-sort-container']",
+    "addToCartBtn":"div[data-test='inventory-item']:nth-child({numb}) button",
+    "cartBadge":"[data-test='shopping-cart-badge']",
+    "productLink":"div[data-test='inventory-item']:nth-child({numb}) div[data-test='inventory-item-name']"
+}
