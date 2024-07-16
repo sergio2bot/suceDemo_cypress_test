@@ -3,7 +3,7 @@
 **Table of content**
 *[Framework Overview](#framework-overview)
 * [Framework Setup](#framework-setup)
-* [Framework constraints](#pre-conditions-and-framework-constraints)
+* [Framework constraints](#framework-constraints)
 * [Available npm commands](#available-npm-commands)
 * [Generating html report](#generating-html-report)
 * [Troubleshooting](#troubleshooting)
@@ -39,7 +39,7 @@ npm install
 * To run test please use scripts provided in [Available npm commands] section
 
 
-## framework constraints
+## Framework constraints
 When using Cypress with JavaScript and Cucumber, consider the following constraints:
 
 1. **Asynchronous Behavior**: Cypress commands are asynchronous. Ensure you handle asynchronous code properly, especially when writing custom commands or complex test scenarios.
@@ -54,9 +54,7 @@ When using Cypress with JavaScript and Cucumber, consider the following constrai
 
 6. **Parallel Execution**: While Cypress supports parallel test execution with its Dashboard service, ensure your tests are idempotent and can run independently to take full advantage of parallelization.
 
-7. **Environment Variables**: Manage your environment variables securely. Use a `.env` file or other methods supported by Cypress to handle different environments (e.g., development, staging, production).
-
-8. **Test Data Management**: Properly manage test data to ensure repeatability of tests. Consider using fixtures, factories, or other strategies to handle test data setup and teardown.
+7. **Test Data Management**: Properly manage test data to ensure repeatability of tests. Consider using fixtures, factories, or other strategies to handle test data setup and teardown.
 
 
 

@@ -23,7 +23,7 @@ jobs:
       run: npm ci
 
     - name: Run regression tests with Standard user
-      run: npm run teststandard
+      run: npm run testStandard
     
     - name: Generate report
       run: npm run generatereport
