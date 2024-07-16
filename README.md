@@ -56,7 +56,7 @@ When using Cypress with JavaScript and Cucumber, consider the following constrai
 
 7. **Test Data Management**: Properly manage test data to ensure repeatability of tests. Consider using fixtures, factories, or other strategies to handle test data setup and teardown.
 
-
+ 
 
 # Available npm commands 
 
@@ -82,7 +82,7 @@ The available commands are:
 * `generateReport`: To generate HTML report
 * `deleteJsonReport`:To delete report
 
-When running any of the commands, the cypress configuration used by default is defined in [cypress.json](cypress.json)
+When running any of the commands, the cypress configuration used by default is defined in [cypress.config.js](cypress.json)
 
 To run some specific tests scenarios we can mark them with specific tags in the '.feature' files
 * Example 
@@ -179,3 +179,4 @@ Please refer to the error below for more details.
 **Solution**: 
 
 Follow the steps specifiend in the following link: [Installing cypress on mac - dyld: Library not loaded #4089](https://github.com/cypress-io/cypress/issues/4089)
+ 
