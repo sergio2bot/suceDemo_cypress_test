@@ -1,0 +1,38 @@
+name: Cypress regression tests for sauceDemo website
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    container:
+      image: cypress/included
+
+steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run regression tests with Standard user
+      run: npm run teststandard
+    
+    - name: Generate report
+      run: npm run generatereport
+
+    - name: Store test results
+      uses: actions/upload-artifact@v4
+      with:
+        name: cypress-results
+        path: cypress/allwyn-report/
+        overwrite: true
+    
+   
