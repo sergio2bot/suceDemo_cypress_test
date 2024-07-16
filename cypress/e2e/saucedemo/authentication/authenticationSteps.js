@@ -1,10 +1,18 @@
 
+import commonLocators from '../../../fixtures/commonStepsLocators.json'
 const errorMsg = '[data-test="error"]';
 
 
-//---------------ASSERTIONS-------------------------
+//--------------Actions-----------------------------
+/**
+ * Steps for the Data driven to verify several Authentication error scenarios
+ */
+When('the user enters {string} and {string}',(user,pass)=>{
+    cy.fillInTextBox(commonLocators.userNameFld,user);
+    cy.fillInTextBox(commonLocators.passFld,pass);
+})
 
-
-Then(/^the user sees the following error message:$/,(dataTable)=>{
-    cy.get(errorMsg).should('have.text',dataTable.rawTable[0][0]);
+//--------------Assertions----------------------------
+Then('the user sees the {string} message',(msg)=>{
+    cy.assertElementHasText(commonLocators.errorMsg,msg);
 })

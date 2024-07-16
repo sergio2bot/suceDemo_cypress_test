@@ -59,6 +59,6 @@ Then(/^the user sees all products in the listing contains full data:$/,(datatabl
 
 
 Then(/^the user sees the following error message:$/,(dataTable)=>{
-    cy.get(errorMsg).should('have.text',dataTable.rawTable[0][0]);
+    cy.get(commonLocators.errorMsg).should('have.text',dataTable.rawTable[0][0]);
 })
 
