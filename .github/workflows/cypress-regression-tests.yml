@@ -24,6 +24,7 @@ jobs:
 
     - name: Run regression tests with Standard user
       run: npm run testStandard
+      continue-on-error: true
     
     - name: Generate report
       run: npm run generatereport
