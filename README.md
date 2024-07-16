@@ -14,7 +14,7 @@ ___
 
 ## Framework Overview
 
-* Application under test: "[https//](https://www.saucedemo.com/)"
+* Application under test: "[https//https://www.saucedemo.com/]"
 * Test Automation Tool: Cypress+JS
 * BDD approach is implemented using Cucumber + Gherkin
 * Test reporter - standard cucumber test reporter
