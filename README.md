@@ -118,7 +118,7 @@ For example, to generate a result with the previous test suite run output:
 npm run generateReport
 ```
 
-Report is generated under `cypress/allwyn-report`
+Report is generated under `cypress/suacedemo-report`
 
 ## Troubleshooting
 
