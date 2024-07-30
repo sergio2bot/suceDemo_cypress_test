@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: cypress-results
-        path: cypress/saucedemo-report/
+        path: /__w/suceDemo_cypress_test/suceDemo_cypress_test/cypress/suacedemo-report/
         overwrite: true
     
    
